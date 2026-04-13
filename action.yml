@@ -1,0 +1,51 @@
+name: 'Review Mate AI'
+description: '🤖 AI-Powered Code Review - Automatic PR analysis, security vulnerability detection, and best practice suggestions'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+inputs:
+  github_token:
+    description: 'GitHub token'
+    required: true
+    default: ${{ github.token }}
+  license_key:
+    description: 'Review Mate Pro license key (get yours at https://reviewmate.ai)'
+    required: false
+  min_confidence:
+    description: 'Minimum confidence threshold (0.0-1.0)'
+    required: false
+    default: '0.6'
+  languages:
+    description: 'Comma-separated languages to focus analysis (e.g., javascript,python,go)'
+    required: false
+    default: ''
+  max_files:
+    description: 'Maximum files to analyze per PR (free tier: 5, pro: unlimited)'
+    required: false
+    default: '5'
+  review_type:
+    description: 'Type of review: basic, standard, deep (free=basic only)'
+    required: false
+    default: 'basic'
+  security_scan:
+    description: 'Enable security vulnerability scanning (pro feature)'
+    required: false
+    default: 'false'
+  pr_number:
+    description: 'PR number to review (auto-detected)'
+    required: false
+    default: ''
+outputs:
+  findings_count:
+    description: 'Number of issues found'
+    value: ${{ steps.review.outputs.findings_count }}
+  review_id:
+    description: 'Review session ID'
+    value: ${{ steps.review.outputs.review_id }}
+  tier:
+    description: 'License tier used (free/pro/team)'
+    value: ${{ steps.review.outputs.tier }}
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+  post: 'dist/post.js'
