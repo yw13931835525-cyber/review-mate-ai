@@ -152,3 +152,27 @@ MIT License - see [LICENSE](LICENSE) for details.
   <strong>Review Mate AI</strong> — Code review powered by AI<br>
   <a href="https://reviewmate.ai">Website</a> · <a href="https://github.com/yw13931835525-cyber/review-mate-ai">Source</a> · <a href="https://github.com/marketplace">Marketplace</a>
 </p>
+
+---
+
+## ❤️ Sponsor This Project
+
+If review-mate-ai saves you time, consider sponsoring our work!
+
+[![Sponsor](https://github.com/sponsors/yw13931835525-cyber/widgets/badge.svg)](https://github.com/sponsors/yw13931835525-cyber)
+
+### Why Sponsor?
+
+- 🚀 Help us maintain and improve AI-powered code review
+- 🛡️ Support development of new security scanning features
+- 🌐 Keep the service free for open source projects
+
+### Payment Options
+
+- **GitHub Sponsors**: https://github.com/sponsors/yw13931835525-cyber
+- **ETH/ERC-20**: 0x6FCBd5d14FB296933A4f5a515933B153bA24370E
+- **BTC**: bc1pfvewxym02a4hwupn9f0d0x7h26uuf2jhjkcz3ysd9ef6acjttrmqwex66h
+
+---
+
+*Maintained by 河北高软科技有限公司 (Hebei Gaoruan Technology Co., Ltd.)*
